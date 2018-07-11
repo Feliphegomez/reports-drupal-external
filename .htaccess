@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond "$1.html" !-f
+RewriteCond "$1.php" !-d
+RewriteRule "^(.+)/$" "index.php?database_name=$1" [QSA,L]
+RewriteRule "^(.+)/(.+).php$" "$2.php?database_name=$1" [QSA,L]
+RewriteRule "^(.+)/(.+).html$" "$2.php?database_name=$1" [QSA,L]

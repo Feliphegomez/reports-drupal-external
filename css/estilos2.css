@@ -1,0 +1,71 @@
+.contenedor {
+	margin: auto;
+	background-color: #EADBFD;
+	width: 60%;
+	height: 80%;
+	margin-top: 5%;
+}
+.container {
+    position: relative;
+    width: 30%;
+	padding: 30px;
+	display: inline-block;
+	margin: auto;
+	margin-left: 4%;
+	margin-top: -5%
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-left: 20%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #DB00FD;
+  color: white;
+  font-size: 20px;
+  padding: 14px 30px;
+  text-align: center;
+
+}
+h2{
+	text-align: center;
+	padding: 10px;
+	font-size: 35px;
+	font-family: helvetica;
+	color: black;
+	
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/carga.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
